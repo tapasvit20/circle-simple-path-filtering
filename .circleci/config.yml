@@ -1,7 +1,7 @@
 version: 2.1
 
-setup: << pipeline.parameters.run-setup >>
-
+#setup: << pipeline.parameters.run-setup >>
+setup: true
 orbs:
   path-filtering: circleci/path-filtering@0.0.2
 
