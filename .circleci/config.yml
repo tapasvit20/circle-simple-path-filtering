@@ -78,6 +78,8 @@ workflows:
   pre:
     when: << pipeline.parameters.run-setup >>
     jobs:
+      - Build-And-Test
+      - Set-Version   
       - path-filtering/filter:
           # Compare files on main
           base-revision: main
